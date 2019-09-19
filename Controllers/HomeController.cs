@@ -8,9 +8,9 @@ namespace PersonalWebsite.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "Here is some text";
+            return View();
         }
     }
 }
