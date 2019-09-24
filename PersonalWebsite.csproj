@@ -5,8 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\Content\CSS\" />
     <Folder Include="Models\" />
-    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Content\Images\chartres-cathedral.jpg" />
   </ItemGroup>
 
   <ItemGroup>
