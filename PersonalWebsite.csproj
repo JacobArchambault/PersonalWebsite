@@ -5,12 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Content\CSS\" />
-    <Folder Include="Models\" />
+    <Compile Remove="wwwroot\Content\**" />
+    <Content Remove="wwwroot\Content\**" />
+    <EmbeddedResource Remove="wwwroot\Content\**" />
+    <None Remove="wwwroot\Content\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\Content\Images\chartres-cathedral.jpg" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>
