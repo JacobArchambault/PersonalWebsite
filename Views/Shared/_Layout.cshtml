@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link rel="stylesheet" href="~/lib/bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link href="~/css/site.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <img src="@Url.Content("~/images/urquhart-castle.jpg")" alt="Urquhart Castle, Loch Ness, Scotland" />
-        <nav>
-            <a>Home</a>
-            <a>About</a>
-            <a>Resume and CV</a>
-            <a>Coding projects</a>
-            <a>Academic publications</a>
-            <a>Blog</a>
-            <a>Contact</a>
+        <img src="@Url.Content("~/images/urquhart-castle.jpg")" alt="Urquhart Castle, Loch Ness, Scotland"  class="img-fluid"/>
+        <nav class="nav">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">About</a>
+            <a class="nav-item">Resume and CV</a>
+            <a class="nav-item">Coding projects</a>
+            <a class="nav-item">Academic publications</a>
+            <a class="nav-item">Blog</a>
+            <a class="nav-item">Contact</a>
         </nav>
     </header>
     <main>
         @RenderBody()
     </main>
-    <footer><button type="button" class="btn-danger">Here is a button</button>Here is some footer text</footer>
+    <footer><button type="button" class="btn btn-success">Here is a button</button>Here is some footer text</footer>
 </body>
 </html>
