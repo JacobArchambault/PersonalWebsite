@@ -7,29 +7,29 @@
     <title>@ViewBag.Title</title>
     <link rel="stylesheet" href="~/lib/bootstrap-4.3.1-dist/css/bootstrap.css" />
     <link href="~/lib/fontawesome-free-5.11.2-web/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet" />
-    <link href="~/css/site.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/dff3a6779b.js" crossorigin="anonymous"></script>
+    <link href="~/css/site.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <img src="@Url.Content("~/images/urquhart-castle.jpg")" alt="Urquhart Castle, Loch Ness, Scotland"  class="img-fluid"/>
-        <nav class="nav">
-            <a class="nav-item" >About</a>
-            <a class="nav-item" >Resume and CV</a>
-            <a class="nav-item" href ="http://github.com/JacobArchambault" target="_blank">Coding projects</a>
+        <img src="@Url.Content("~/images/urquhart-castle.jpg")" alt="Urquhart Castle, Loch Ness, Scotland" class="img-fluid" />
+        <nav class="navbar">
+            <a class="nav-item">About</a>
+            <a class="nav-item" href="@Url.Content("~/docs/resume-tech.pdf")" target="_blank">Resume</a>
+            <a class="nav-item" href="http://github.com/JacobArchambault" target="_blank">Coding projects</a>
             <a class="nav-item" href="http://fordham.academia.edu/JacobArchambault" target="_blank">Academic publications</a>
             <a class="nav-item" href="http://JacobArchambault.com/posts" target="_blank">Blog</a>
             <a class="nav-item">Contact</a>
-
         </nav>
     </header>
     <main>
         @RenderBody()
     </main>
-    <footer>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-medium"></i>
-        <i class="fab fa-github"></i>
+    <footer class="text-center">
+        <a href="http://linkedin.com/in/JacobArchambault" target="_blank" alt="LinkedIn.com" ><i class="fab fa-linkedin" id="linkedin-icon"></i></a>
+        <a href="http://fordham.academia.edu/JacobArchambault" target="_blank"><i class="fas fa-university"></i></a>
+        <a href="http://medium.com/@@JacobArchambault" target="_blank" alt="Medium.com"><i class="fab fa-medium" id="medium-icon"></i></a>
+        <a href="http://github.com/JacobArchambault" target="_blank" alt="Github"><i class="fab fa-github" id="github-icon"></i></a>
     </footer>
 </body>
 </html>
