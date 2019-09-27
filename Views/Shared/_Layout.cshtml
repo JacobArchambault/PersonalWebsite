@@ -6,24 +6,30 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link rel="stylesheet" href="~/lib/bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link href="~/lib/fontawesome-free-5.11.2-web/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet" />
     <link href="~/css/site.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/dff3a6779b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <img src="@Url.Content("~/images/urquhart-castle.jpg")" alt="Urquhart Castle, Loch Ness, Scotland"  class="img-fluid"/>
         <nav class="nav">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">About</a>
-            <a class="nav-item">Resume and CV</a>
-            <a class="nav-item">Coding projects</a>
-            <a class="nav-item">Academic publications</a>
-            <a class="nav-item">Blog</a>
+            <a class="nav-item" >About</a>
+            <a class="nav-item" >Resume and CV</a>
+            <a class="nav-item" href ="http://github.com/JacobArchambault" target="_blank">Coding projects</a>
+            <a class="nav-item" href="http://fordham.academia.edu/JacobArchambault" target="_blank">Academic publications</a>
+            <a class="nav-item" href="http://JacobArchambault.com/posts" target="_blank">Blog</a>
             <a class="nav-item">Contact</a>
+
         </nav>
     </header>
     <main>
         @RenderBody()
     </main>
-    <footer><button type="button" class="btn btn-success">Here is a button</button>Here is some footer text</footer>
+    <footer>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-medium"></i>
+        <i class="fab fa-github"></i>
+    </footer>
 </body>
 </html>
