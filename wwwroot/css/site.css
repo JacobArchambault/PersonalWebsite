@@ -1,20 +1,25 @@
-﻿p {
+﻿
+p {
     text-align: justify;
     text-indent: 1rem;
 }
+
 i {
     font-size: 2rem;
     color: black;
     margin-left: .2rem;
     margin-right: .2rem;
 }
+
+
+#github-icon {
+    color: #24292e;
+}
+
 #linkedin-icon {
     color: #0073b1;
 }
+
 #medium-icon{
     color: rgba(0, 0, 0, .84);
-}
-#github-icon
-{
-    color: #24292e;
 }
