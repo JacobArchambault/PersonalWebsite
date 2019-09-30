@@ -1,8 +1,29 @@
-﻿
+﻿/* 1 Element selectors */
+body {
+    align-items: stretch;
+    background-color: whitesmoke;
+    color: rgb(10, 10, 10);
+    display: flex;
+    font-family: 'Cormorant', serif;
+    flex-direction: column;
+}
+
+footer{
+    margin-top: auto;
+}
+
 form {
+    align-items: stretch;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+}
+
+h2 {
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
 }
 
 i {
@@ -12,12 +33,29 @@ i {
     margin-right: .2rem;
 }
 
+main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex: 1 0 auto;
+}
+
 p {
     text-align: justify;
     text-indent: 1rem;
 }
 
+/* 2 Class selectors */
+.btn{
+    background-color: rgb(191, 191, 191);
+    align-self: flex-end;
+}
 
+/* 3 Pseudo-selectors */
+.btn:hover{
+    background-color: rgb(127, 127, 127);
+}
+
+/* 4 ID Selectors */
 #github-icon {
     color: #24292e;
 }
