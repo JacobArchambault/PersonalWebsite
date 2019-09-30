@@ -1,7 +1,8 @@
 ﻿
-p {
-    text-align: justify;
-    text-indent: 1rem;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 i {
@@ -9,6 +10,11 @@ i {
     color: black;
     margin-left: .2rem;
     margin-right: .2rem;
+}
+
+p {
+    text-align: justify;
+    text-indent: 1rem;
 }
 
 
