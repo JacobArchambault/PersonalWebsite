@@ -10,26 +10,11 @@
     <link href="~/css/site.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <img src="@Url.Content("~/images/urquhart-castle.jpg")" alt="Urquhart Castle, Loch Ness, Scotland" class="img-fluid" />
-        <nav class="navbar">
-            <a class="nav-item" href="@Url.Content("~/Home")">About</a>
-            <a class="nav-item" href="@Url.Content("~/docs/resume-tech.pdf")" target="_blank">Resume</a>
-            <a class="nav-item" href="http://github.com/JacobArchambault" target="_blank">Coding projects</a>
-            <a class="nav-item" href="http://fordham.academia.edu/JacobArchambault" target="_blank">Academic publications</a>
-            <a class="nav-item" href="http://JacobArchambault.com/posts" target="_blank">Blog</a>
-            <a class="nav-item" href="@Url.Content("~/Contact")">Contact</a>
-        </nav>
-    </header>
+    @await Html.PartialAsync("_Header")
     <main>
         @RenderBody()
     </main>
-    <footer class="text-center">
-        <a href="http://linkedin.com/in/JacobArchambault" target="_blank" alt="LinkedIn.com"><i class="fab fa-linkedin" id="linkedin-icon"></i></a>
-        <a href="http://fordham.academia.edu/JacobArchambault" target="_blank"><i class="fas fa-university"></i></a>
-        <a href="http://medium.com/@@JacobArchambault" target="_blank" alt="Medium.com"><i class="fab fa-medium" id="medium-icon"></i></a>
-        <a href="http://github.com/JacobArchambault" target="_blank" alt="Github"><i class="fab fa-github" id="github-icon"></i></a>
-    </footer>
+    @await Html.PartialAsync("_Footer")
     <script src="https://kit.fontawesome.com/dff3a6779b.js" crossorigin="anonymous"></script>
 </body>
 </html>
