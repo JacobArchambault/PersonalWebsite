@@ -28,8 +28,7 @@ namespace PersonalWebsite
             app.UseStaticFiles();
             app.UseHttpsRedirection();
 
-            app.UseMvc(routes => routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}"));
-
+            app.UseMvc(routes =>routes.MapRoute(name: "OnlyAction", template: "{action}/{id?}", defaults: new { controller = "Home", action = "Index" }));
         }
     }
 }
