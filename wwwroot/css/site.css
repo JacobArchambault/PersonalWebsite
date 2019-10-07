@@ -18,7 +18,7 @@ main {
     margin-right: 1rem;
     flex: 1 0 auto;
 }
-* > main {
+p {
     max-width: 375px;
 }
 
@@ -82,6 +82,13 @@ p {
     margin-top: 1rem;
 }
 
+.profile {
+    height: auto;
+    display: inline;
+    float: right;
+    max-width: 320px;
+}
+
 /* 3 Pseudo-selectors */
 .btn:hover{
     background-color: rgb(127, 127, 127);
@@ -104,5 +111,11 @@ p {
 @media (max-width: 425px) {
     nav a {
         flex: 1 1 33%;
+    }
+}
+@media (max-width: 767px)
+{
+    .profile {
+        display:none;
     }
 }
