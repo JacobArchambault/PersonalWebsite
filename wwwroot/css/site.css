@@ -1,5 +1,5 @@
 ﻿/* 1 Element selectors */
-/* 1.1. Main page elements*/
+/* 1.1. Main divider elements*/
 html, body {
     height: 100%;
 }
@@ -19,12 +19,11 @@ main {
     flex: 1 0 auto;
 }
 
-
 footer{
     margin-top: auto;
 }
 
-/* 2 Main body elements*/
+/* 1.2 Elements within main divider elements*/
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -33,9 +32,11 @@ nav {
 }
 
 nav a {
+    border: 1px solid;
+    border-image: radial-gradient(whitesmoke, #d3d8de, whitesmoke) 1;
+    border-image-slice: 1;
     text-align: center;
     flex: 1 1 auto;
-    border: 1px solid #dee2e6;
     padding: 0 .5rem;
 }
 
@@ -90,4 +91,11 @@ p {
 
 #medium-icon{
     color: rgba(0, 0, 0, .84);
+}
+
+/*Solution for header: for screens under a certain width, set flex on nav a to 1 1 33%; for larger screens, set it to 1 1 auto*/
+@media (max-width: 425px) {
+    nav a {
+        flex: 1 1 33%;
+    }
 }
