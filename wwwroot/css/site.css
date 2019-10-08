@@ -1,100 +1,148 @@
-﻿/* 1 Element selectors */
-/* 1.1. Main divider elements*/
-html, body {
-    height: 100%;
-}
+﻿/* #region 1 Element selectors */
+    /* #region 1.1 Main divider elements*/
+    html, body {
+        height: 100%;
+    }
 
-body {
-    align-items: stretch;
-    background-color: whitesmoke;
-    color: rgb(10, 10, 10);
-    display: flex;
-    font-family: 'Cormorant', serif;
-    flex-direction: column;
-}
+    body {
+        align-items: stretch;
+        background-color: whitesmoke;
+        color: rgb(10, 10, 10);
+        display: flex;
+        font-family: 'Cormorant', serif;
+        flex-direction: column;
+    }
 
-main {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    flex: 1 0 auto;
-}
-p {
-    max-width: 375px;
-}
+    main {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        /*flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;*/
+    }
 
-footer{
-    margin-top: auto;
-}
+    footer {
+        margin-top: auto;
+    }
 
-/* 1.2 Elements within main divider elements*/
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0;
-}
+    /* #endregion */
 
-nav a {
-    border: 1px solid;
-    border-image: radial-gradient(#bdc5cd, whitesmoke) 1;
-    text-align: center;
-    flex: 1 1 auto;
-    padding: 0 .5rem;
-}
+    /* #region 1.2 Header elements */
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
 
-form {
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
-}
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+    }
 
-h2 {
-    text-align: center;
-}
+    nav a {
+        border: 1px solid;
+        border-image: radial-gradient(#bdc5cd, whitesmoke) 1;
+        text-align: center;
+        flex: 1 1 auto;
+        padding: 0 .5rem;
+    }
+
+    /*#endregion */
+
+    /* #region 1.3 Body elements */
+
+        /* #region 1.3.1 Shared */
+
+        h2 {
+            text-align: center;
+        }
+        
+        /* #endregion */
+
+        /* #region 1.3.2 About */
+
+        i {
+            font-size: 2rem;
+            color: black;
+            margin-left: .2rem;
+            margin-right: .2rem;
+        }
+
+        label {
+            margin-bottom: 0;
+            margin-top: 0.5rem;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 1rem;
+        }
+
+        /* #endregion */
+
+        /* #region 1.3.3 Contact */
+
+        form {
+            align-items: stretch;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* #endregion */
+/* #endregion */
+
+    /* #region 1.4 Footer elements */
+    /* #endregion */
+
+    /* #region 1.5 Pseudo-elements */
+
+    nav a:hover {
+        background: #a89898;
+        transition: background 1s ease-in;
+    }
+
+    /* #endregion */
+
+/* #endregion */
+
+/* #region 2 Class selectors */
+
+    /* #region 2.1 Classes */
+    .btn {
+        align-self: flex-end;
+        background-color: rgb(191, 191, 191);
+        margin-top: 1rem;
+    }
+
+    .profile {
+        height: auto;
+        display: inline;
+        float: right;
+        max-width: 320px;
+    }
+
+    p, form {
+        max-width: 375px;
+    }
 
 
-i {
-    font-size: 2rem;
-    color: black;
-    margin-left: .2rem;
-    margin-right: .2rem;
-}
+    /* #endregion */
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-label {
-    margin-bottom: 0;
-    margin-top: 0.5rem;
-}
+    /* #region 2.2 Pseudo-classes */
+    .btn:hover {
+        background-color: #a89898;
+        transition: background-color 1s ease-in;
+    }
 
-p {
-    text-align: justify;
-    text-indent: 1rem;
-}
+    /* #endregion */
 
-/* 2 Class selectors */
-.btn {
-    align-self: flex-end;
-    background-color: rgb(191, 191, 191);
-    margin-top: 1rem;
-}
+/* #endregion */
 
-.profile {
-    height: auto;
-    display: inline;
-    float: right;
-    max-width: 320px;
-}
 
-/* 3 Pseudo-selectors */
-.btn:hover{
-    background-color: rgb(127, 127, 127);
-}
-
-/* 4 ID Selectors */
+/* #region 3 ID Selectors */
 #github-icon {
     color: #24292e;
 }
@@ -107,15 +155,20 @@ p {
     color: rgba(0, 0, 0, .84);
 }
 
-/* 5 Media Queries */
+/* #endregion */
+
+/* #region 4 Media Queries */
 @media (max-width: 425px) {
     nav a {
         flex: 1 1 33%;
     }
 }
+
 @media (max-width: 767px)
 {
     .profile {
-        display:none;
+        display: none;
     }
 }
+
+/* #endregion */

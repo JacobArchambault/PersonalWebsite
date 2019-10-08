@@ -1,1 +1,1 @@
-﻿$("img").hide().fadeIn(4000);
+﻿//$("img").hide().fadeIn(4000);
