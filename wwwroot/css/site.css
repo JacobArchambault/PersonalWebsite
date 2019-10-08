@@ -59,6 +59,10 @@
         h2 {
             text-align: center;
         }
+
+        p, form {
+            max-width: 375px;
+        }
         
         /* #endregion */
 
@@ -122,10 +126,6 @@
         display: inline;
         float: right;
         max-width: 320px;
-    }
-
-    p, form {
-        max-width: 375px;
     }
 
 
