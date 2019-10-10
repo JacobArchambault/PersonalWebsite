@@ -1,20 +1,20 @@
 ﻿/* #region 1 Element selectors */
     /* #region 1.1 Main divider elements*/
-    html, body {
-        height: 100%;
-    }
+html, body {
+    height: 100%;
+}
 
-    body {
-        align-items: stretch;
-        background-color: whitesmoke;
-        color: rgb(10, 10, 10);
-        display: flex;
-        font-family: 'Cormorant', serif;
-        flex-direction: column;
-        max-width: 768px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+body {
+    align-items: stretch;
+    background-color: whitesmoke;
+    color: rgb(10, 10, 10);
+    display: flex;
+    font-family: 'Cormorant', serif;
+    flex-direction: column;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;    
+}
 
     main {
         max-width: calc(768px - 2rem);
@@ -28,12 +28,13 @@
 
     /* #endregion */
 
-    /* #region 1.2 Header elements */
     img {
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
+        border-radius: 0.25rem;
     }
+    /* #region 1.2 Header elements */
 
     nav {
         display: flex;
@@ -125,6 +126,7 @@
         float: right;
         max-width: 320px;
         margin-left: 1rem;
+        border: outset;
     }
 
 
