@@ -1,9 +1,5 @@
 ﻿/* #region 1 Element selectors */
     /* #region 1.1 Main divider elements*/
-html {
-    background-image: linear-gradient(to right, #a89898, whitesmoke, whitesmoke, whitesmoke, whitesmoke, whitesmoke, whitesmoke, whitesmoke, #a89898);
-}
-
     html, body {
         height: 100%;
     }
@@ -176,6 +172,12 @@ footer {
     }
     .profile {
         display: none;
+    }
+}
+@media (min-width: 1440px)
+{
+    html {
+        background-image: linear-gradient(to right, #a89898, whitesmoke, whitesmoke, whitesmoke, whitesmoke, whitesmoke, whitesmoke, whitesmoke, #a89898);
     }
 }
 
