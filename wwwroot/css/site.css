@@ -11,13 +11,16 @@
         display: flex;
         font-family: 'Cormorant', serif;
         flex-direction: column;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-main {
-    max-width: calc(768px - 2rem);
-    margin-left: auto;
-    margin-right: auto;
-}
+    main {
+        max-width: calc(768px - 2rem);
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     footer {
         margin-top: auto;
@@ -99,8 +102,8 @@ main {
     /* #region 1.5 Pseudo-elements */
 
     nav a:hover {
-        background: #a89898;
-        transition: background 1s ease-in;
+        background-color: #a89898;
+        transition: background-color 1s ease-in;
     }
 
     /* #endregion */
@@ -136,7 +139,6 @@ main {
     /* #endregion */
 
 /* #endregion */
-
 
 /* #region 3 ID Selectors */
 #github-icon {
