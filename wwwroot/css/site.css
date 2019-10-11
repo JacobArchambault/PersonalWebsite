@@ -28,13 +28,16 @@
 
     /* #endregion */
 
+    /* #region 1.2 Common elements */
     img {
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
         border-radius: 0.25rem;
-    }
-    /* #region 1.2 Header elements */
+    }   
+    /*#endregion*/
+
+    /* #region 1.3 Header elements */
 
     nav {
         display: flex;
@@ -53,9 +56,9 @@
 
     /*#endregion */
 
-    /* #region 1.3 Body elements */
+    /* #region 1.4 Body elements */
 
-        /* #region 1.3.1 Shared */
+        /* #region 1.4.1 Shared */
 
         h2 {
             text-align: center;
@@ -64,7 +67,7 @@
         
         /* #endregion */
 
-        /* #region 1.3.2 About */
+        /* #region 1.4.2 About */
 
         i {
             font-size: 2rem;
@@ -85,7 +88,7 @@
 
         /* #endregion */
 
-        /* #region 1.3.3 Contact */
+        /* #region 1.4.3 Contact */
 
         form {
             align-items: stretch;
@@ -95,12 +98,12 @@
         }
 
         /* #endregion */
-/* #endregion */
-
-    /* #region 1.4 Footer elements */
     /* #endregion */
 
-    /* #region 1.5 Pseudo-elements */
+    /* #region 1.5 Footer elements */
+    /* #endregion */
+
+    /* #region 1.6 Pseudo-elements */
 
     nav a:hover {
         background-color: #a89898;
@@ -181,4 +184,5 @@
     }
 }
 
+/* An interesting hack for increasing image speed: Add ids to image elements. Set the href in the image element to a 1 by 1px element. Set the real image as a background image in various css media queries, with the resolution differing depending on the size of the screen it's being viewed on. */
 /* #endregion */
