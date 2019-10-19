@@ -117,18 +117,6 @@
 /* #region 2 Class selectors */
 
     /* #region 2.1 Classes */
-    .bg-image{
-        animation: fadein 4s ease-in;
-    }
-    @keyframes fadein {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
     .btn {
         align-self: flex-end;
         background-color: rgb(191, 191, 191);
@@ -158,6 +146,10 @@
 /* #endregion */
 
 /* #region 3 ID Selectors */
+#bg-image2 {
+    display: none;
+}
+
 #github-icon {
     color: #24292e;
 }
