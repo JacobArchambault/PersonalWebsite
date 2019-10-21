@@ -139,19 +139,19 @@ img {
 
 /* #region 3 ID Selectors */
 
-#pics {
+.pics {
     margin: auto;
     display: grid;
 }
 
-#profile {
+.profile {
     display: grid;
     float: right;
     max-width: 320px;
     margin-left: 1rem;
 }
 
-#profile img {
+.profile img {
     height: auto;
     border: outset;
 }
