@@ -1,6 +1,7 @@
-﻿$("#bg-image").hide().fadeIn(4000);
-
-$("header img").click(function () {
-    $("#bg-image").slideToggle();
-    $("#bg-image2").slideToggle();
-});
+﻿$('.pics img:gt(0)').hide();
+setInterval(function () {
+    $('.pics :first-child').fadeOut()
+        .next('img').fadeIn()
+        .end().appendTo('.pics');
+},
+    4000);
