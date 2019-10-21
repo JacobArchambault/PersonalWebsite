@@ -118,26 +118,11 @@ img {
 /* #region 2 Class selectors */
 
     /* #region 2.1 Classes */
-    .pics {
-        margin: auto;
-        display: grid;
-    }
 
     .btn {
         align-self: flex-end;
         background-color: rgb(191, 191, 191);
         margin-top: 1rem;
-    }
-
-    .profile {
-        display: grid;
-        float: right;
-        max-width: 320px;
-        margin-left: 1rem;
-    }
-    .profile img {
-        height: auto;
-        border: outset;
     }
 
     /* #endregion */
@@ -153,6 +138,23 @@ img {
 /* #endregion */
 
 /* #region 3 ID Selectors */
+
+#pics {
+    margin: auto;
+    display: grid;
+}
+
+#profile {
+    display: grid;
+    float: right;
+    max-width: 320px;
+    margin-left: 1rem;
+}
+
+#profile img {
+    height: auto;
+    border: outset;
+}
 
 #github-icon {
     color: #24292e;
