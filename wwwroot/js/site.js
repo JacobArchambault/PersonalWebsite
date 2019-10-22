@@ -1,28 +1,24 @@
-﻿//#region 1. Function declarations
-
-// Toggle profile photo with fade on click.
+﻿//#region 1 Function declarations
+// Toggles items with fade effect.
 function fadeCarousel(containerClass) {
-    $(containerClass + '> :gt(0)').hide();
-    $(containerClass).click(function () {
-        $(containerClass + '> :first-child').fadeOut()
-            .next().fadeIn()
-            .end().appendTo(containerClass);
-    });
-}
-
-// Cycle through background images with a fade, switching images every six seconds.
-function headerFadeCarousel(containerClass) {
-    $(containerClass + '> :gt(0)').hide();
-    setInterval(function () {
-        $(containerClass + '> :first-child').fadeOut()
-            .next().fadeIn()
-            .end().appendTo(containerClass);
-    }, 6000);
+    $(containerClass + '> :first-child').fadeOut()
+        // cyles through elements successively
+        .next().fadeIn()
+        // starts the process over at the end.
+        .end().appendTo(containerClass);
 }
 
 //#endregion
 
+// #region 2 Employed functions.
 
-headerFadeCarousel(".pics");
-fadeCarousel(".profile");
+// Hide all but the first element in my image container classes.
+$('.profile > :gt(0)').hide();
+$('.pics > :gt(0)').hide();
 
+// Cycle through background images with a fade, switching images every six seconds.
+setInterval(() => {
+    fadeCarousel(".pics");
+}, 6000);
+
+// #endregion
