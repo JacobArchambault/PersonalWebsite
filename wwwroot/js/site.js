@@ -1,10 +1,11 @@
 ﻿//#region 1 Function declarations
-// Toggles items with fade effect.
+
+// Cycle through items with fade effect.
 function fadeCarousel(containerClass) {
     $(containerClass + '> :first-child').fadeOut()
-        // cyles through elements successively
+        // Cyles through elements successively
         .next().fadeIn()
-        // starts the process over at the end.
+        // Starts the process over at the end.
         .end().appendTo(containerClass);
 }
 

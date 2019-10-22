@@ -1,15 +1,24 @@
 ﻿<header>
     <div class="pics">
-        <img src="~/images/background/castle.jpg" alt="Urquhart Castle, Loch Ness, Scotland" class="img-fluid" />
-        <img src="~/images/background/chartres-cathedral.jpg" alt="Chartres Cathedral, Chartres, France" class="img-fluid"/> 
-        <img src="~/images/background/monets-garden.jpg" alt="Claude Monet's Garden, Giverny, France" class="img-fluid"/>
+        <img class="img-fluid" src="@Url.Content("~/images/background/castle.jpg")" alt="Urquhart Castle, Loch Ness, Scotland" />
+        <img class="img-fluid" src="@Url.Content("~/images/background/chartres-cathedral.jpg")" alt="Chartres Cathedral, Chartres, France" />
+        <img class="img-fluid" src="@Url.Content("~/images/background/monets-garden.jpg")" alt="Claude Monet's Garden, Giverny, France" />
     </div>
     <nav>
         <a href="@Url.Content("~/Index")">About</a>
-        <a href="http://github.com/JacobArchambault" target="_blank">Coding</a>
-        <a href="http://fordham.academia.edu/JacobArchambault" target="_blank">Publications</a>
-        <a href="http://JacobArchambault.com/posts" target="_blank">Blog</a>
-        <a href="@Url.Content("~/docs/resume-tech.pdf")" target="_blank">Resume</a>
+        <a target="_blank" href="http://github.com/JacobArchambault" >Coding</a>
+        <a target="_blank" href="http://fordham.academia.edu/JacobArchambault" >Publications</a>
+        <a target="_blank" href="http://JacobArchambault.com/posts">Blog</a>
+
+        <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false" >
+            Resume/CV
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <a target="_blank" class="dropdown-item" href="@Url.Content("~/docs/resume-tech.pdf")">Resume</a>
+            <a target="_blank" class="dropdown-item" href="@Url.Content("~/docs/curriculum-vitae.pdf")">Curriculum Vitae</a>
+        </div>
+
         <a href="@Url.Content("~/Contact")">Contact</a>
     </nav>
 </header>
