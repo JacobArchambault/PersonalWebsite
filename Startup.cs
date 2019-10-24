@@ -20,13 +20,12 @@ namespace PersonalWebsite
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            app.UseExceptionHandler("/Error");
+            app.UseHsts();
 
-            app.UseStaticFiles();
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseStatusCodePagesWithReExecute("/Error/{0}");
 
             app.UseMvc(routes => routes.MapRoute(name: "OnlyAction", template: "{action}/{id?}", defaults: new { controller = "Home", action = "Index" }));
         }

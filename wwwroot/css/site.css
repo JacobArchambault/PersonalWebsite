@@ -100,6 +100,18 @@
         }
 
         /* #endregion */
+
+        /* #region 1.4.4 Error */
+        figure{
+            max-width: 425px;
+        }
+        figcaption {
+            margin-bottom: 1rem;
+        }
+        audio {
+            margin-top: 1rem;
+        }
+        /* #endregion */
     /* #endregion */
 
     /* #region 1.5 Pseudo-elements */
