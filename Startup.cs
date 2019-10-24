@@ -25,7 +25,7 @@ namespace PersonalWebsite
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseStatusCodePagesWithReExecute("/Error/{0}");
+            app.UseStatusCodePagesWithRedirects("/Error/{0}");
 
             app.UseMvc(routes => routes.MapRoute(name: "OnlyAction", template: "{action}/{id?}", defaults: new { controller = "Home", action = "Index" }));
         }

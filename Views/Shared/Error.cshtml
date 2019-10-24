@@ -1,10 +1,10 @@
-﻿@model Exception
-@{
+﻿@{
     ViewData["Title"] = "Error";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>An error occurred</h2>
+<h2>Error</h2>
+<strong>@Context.Response.StatusCode: @Microsoft.AspNetCore.WebUtilities.ReasonPhrases.GetReasonPhrase(Context.Response.StatusCode)</strong>
 <figure>
     <figcaption>In the meantime, listen to a song about the wonders of fiber optic network communication.</figcaption>
     <img src="~/images/fiber-optic.jpg" alt="Glowing fiber optic cables" />
