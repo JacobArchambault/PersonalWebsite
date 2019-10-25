@@ -7,6 +7,17 @@
             .end().appendTo(containerClass);
     }
 
+    // For each click on my resume or CV, send a record of it to Google Analytics in order to keep track of total events
+    function handleOutboundLinkClicks(event) {
+        ga('send',
+        {
+            hitType: 'event',
+            eventCategory: 'Outbound Link',
+            eventAction: 'click',
+            eventLabel: event.target.href,
+            transport: 'beacon'
+        });
+    }
 //#endregion
 
 // #region 2 Function calls
@@ -16,6 +27,6 @@
     $('.pics > :gt(0)').hide();
 
     // Cycle through background images with a fade, switching images every six seconds.
-    setInterval(() => {fadeCarousel(".pics");}, 6000);
+    setInterval(() => { fadeCarousel(".pics"); }, 6000);
 
 // #endregion
