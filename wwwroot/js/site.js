@@ -9,13 +9,10 @@
 
     // For each click on my resume or CV, send a record of it to Google Analytics in order to keep track of total events
     function handleDocumentLinkClicks(url) {
-        gtag('send',
+        gtag('event', 'click',
         {
-            'hitType': 'event',
-            'eventCategory': 'Documents',
-            'eventAction': 'click',
-            'eventLabel': url,
-            'transport': 'beacon',
+            'event_category': 'Documents',
+            'event_label': url,
         });
     }
 //#endregion
