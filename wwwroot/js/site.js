@@ -9,10 +9,10 @@
 
     // For each click on my resume or CV, send a record of it to Google Analytics in order to keep track of total events
     function handleDocumentLinkClicks(url) {
-        ga('send',
+        gtag('send',
         {
             hitType: 'event',
-            eventCategory: 'Outbound Link',
+            eventCategory: 'Documents',
             eventAction: 'click',
             eventLabel: url.target.href,
             transport: 'beacon'
