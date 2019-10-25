@@ -8,14 +8,14 @@
     }
 
     // For each click on my resume or CV, send a record of it to Google Analytics in order to keep track of total events
-    //function handleDocumentLinkClicks(url) {
-    //    gtag('event', 'click',
-    //    {
-    //        'send_to': 'UA-150909892-1',
-    //        'event_category': 'Documents',
-    //        'event_label': url,
-    //    });
-    //}
+    function handleDocumentLinkClicks(url) {
+        gtag('event', 'click', {
+            'send_to': 'UA-150909892-1',
+            'event_category': 'Documents',
+            'event_label': url,
+        });
+        window.open(url, "_blank");        
+    }
 //#endregion
 
 // #region 2 Function calls
