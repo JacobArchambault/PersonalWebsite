@@ -16,7 +16,6 @@
             'eventAction': 'click',
             'eventLabel': url,
             'transport': 'beacon',
-            'hitCallback': function () { document.location = url; }
         });
     }
 //#endregion
