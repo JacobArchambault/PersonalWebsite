@@ -14,7 +14,6 @@
             'event_category': 'Documents',
             'event_label': url,
         });
-        window.open(url, "_blank");        
     }
 //#endregion
 
