@@ -11,11 +11,12 @@
     function handleDocumentLinkClicks(url) {
         gtag('send',
         {
-            hitType: 'event',
-            eventCategory: 'Documents',
-            eventAction: 'click',
-            eventLabel: url.target.href,
-            transport: 'beacon'
+            'hitType': 'event',
+            'eventCategory': 'Documents',
+            'eventAction': 'click',
+            'eventLabel': url,
+            'transport': 'beacon',
+            'hitCallback': function () { document.location = url; }
         });
     }
 //#endregion
