@@ -8,13 +8,13 @@
     }
 
     // For each click on my resume or CV, send a record of it to Google Analytics in order to keep track of total events
-    function handleOutboundLinkClicks(event) {
+    function handleDocumentLinkClicks(url) {
         ga('send',
         {
             hitType: 'event',
             eventCategory: 'Outbound Link',
             eventAction: 'click',
-            eventLabel: event.target.href,
+            eventLabel: url.target.href,
             transport: 'beacon'
         });
     }
