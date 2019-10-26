@@ -7,7 +7,7 @@
             .end().appendTo(containerClass);
     }
 
-    // For each click on my resume or CV, send a record of it to Google Analytics in order to keep track of total events
+    // For each click on my resume or CV, send a record of it to Google Analytics.
     function handleDocumentLinkClicks(url) {
         gtag('event', 'click', {
             'send_to': 'UA-150909892-1',
@@ -19,7 +19,7 @@
 
 // #region 2 Function calls
 
-    // Hide all but the first element in my image container classes.
+    // Hide all but the first element in my image container classes on startup.
     $('.profile > :gt(0)').hide();
     $('.pics > :gt(0)').hide();
 
