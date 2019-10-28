@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.WebUtilities;
 
 namespace PersonalWebsite.Controllers
 {
@@ -15,6 +9,7 @@ namespace PersonalWebsite.Controllers
         {
             return View();
         }
+
         public IActionResult Contact()
         {
             return View();
@@ -26,6 +21,5 @@ namespace PersonalWebsite.Controllers
             Response.StatusCode = id;
             return View();
         }
-
     }
 }
