@@ -6,5 +6,6 @@ To run this program, ensure you have docker or another application for running c
 2. To build a container image locally, type the command `sudo docker build -t ja-personal-website .`, then press enter.
 3. To run the container image you've just built, type `sudo docker run --name ja-personal-website-container -p 9999:80 -e ASPNETCORE_URLS=http://*:80 ja-personal-website`*, then press enter.
 4. Open a web browser and navigate to `localhost:9999/` to view the running application.
+5. If you have podman installed, you can run the application with ` sudo podman kube play personal-website-deployment.yaml`. To stop the application and remove pods, run `sudo podman kube down personal-website-deployment.yaml`.
 
 *For information on the use of the ASPNETCORE_URLS parameter, see https://learn.microsoft.com/en-us/dotnet/core/compatibility/containers/8.0/aspnet-port#recommended-action
