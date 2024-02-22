@@ -5,7 +5,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: "2024-02-21T04:12:59Z"
+  creationTimestamp: "2024-02-22T03:28:13Z"
   labels:
     app: ja-personal-website-container-pod
   name: ja-personal-website-container-pod-deployment
@@ -15,17 +15,14 @@ spec:
       app: ja-personal-website-container-pod
   template:
     metadata:
-      creationTimestamp: "2024-02-21T04:12:59Z"
+      creationTimestamp: "2024-02-22T03:28:13Z"
       labels:
         app: ja-personal-website-container-pod
       name: ja-personal-website-container-pod
     spec:
       containers:
-      - env:
-        - name: ASPNETCORE_URLS
-          value: http://*:80
-        image: localhost/ja-personal-website:latest
+      - image: localhost/ja-personal-website:latest
         name: ja-personal-website-container
         ports:
-        - containerPort: 80
-          hostPort: 9999
+        - containerPort: 8080
+          hostPort: 8000
