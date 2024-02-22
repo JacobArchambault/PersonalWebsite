@@ -3,11 +3,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using PersonalWebsite;
 
-var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateSlimBuilder(args);
 builder.Services.AddMvc();
-
+builder.WebHost.UseKestrelHttpsConfiguration();
 var app = builder.Build();
-
 app.UseExceptionHandler("/Error");
 app.UseHsts();
 app.UseHttpsRedirection();
