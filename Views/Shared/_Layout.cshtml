@@ -1,27 +1,57 @@
 ﻿<!DOCTYPE html>
 
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous"
-          asp-fallback-href="~/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"
-          asp-fallback-test-class="sr-only"
-          asp-fallback-test-property="position"
-          asp-fallback-test-value="absolute" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
+        asp-fallback-href="~/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css" asp-fallback-test-class="sr-only"
+        asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant&display=swap">
     <link rel="stylesheet" href="~/css/site.min.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-150909892-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150909892-1');
+    </script>
+
+    @* FontAwesome fonts for social media buttons. *@
+    <script src="https://kit.fontawesome.com/dff3a6779b.js" crossorigin="anonymous" defer></script>
+
+    @* Google's jQuery Content Delivery Network *@
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        asp-fallback-src="~/lib/jquery/dist/jquery.min.js" asp-fallback-test="window.jQuery"
+        crossorigin="anonymous" defer></script>
+
+    @* Popper *@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous" defer></script>
+
+    @*Bootstrap JS *@
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        asp-fallback-src="~/lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"
+        asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous" defer></script>
+
+    @* Local javascript *@
+    <script src="~/js/site.min.js" defer></script>
 </head>
+
 <body>
     @await Html.PartialAsync("_Header")
     <main>
         @RenderBody()
     </main>
     @await Html.PartialAsync("_Footer")
-    @await Html.PartialAsync("_Scripts")
 </body>
+
 </html>
