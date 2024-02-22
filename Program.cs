@@ -6,6 +6,8 @@ using PersonalWebsite;
 var builder = WebApplication.CreateSlimBuilder(args);
 builder.Services.AddMvc();
 builder.WebHost.UseKestrelHttpsConfiguration();
+builder.WebHost.UseQuic();
+
 var app = builder.Build();
 app.UseExceptionHandler("/Error");
 app.UseHsts();
