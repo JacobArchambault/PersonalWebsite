@@ -1,5 +1,5 @@
 # PersonalWebsite
-A containerized .Net 8 website running from a Kubernetes deployment making use of google analytics, custom routing, bundling and minification, ASP.NET MVC shared views, flexbox layouts, media queries, and bootstrap and jQuery CDN's, with links to my programming projects, published papers, resume and curriculum vitae.
+A containerized .Net 9 website running from a Kubernetes deployment making use of google analytics, custom routing, bundling and minification, ASP.NET MVC shared views, flexbox layouts, media queries, and bootstrap and jQuery CDN's, with links to my programming projects, published papers, resume and curriculum vitae.
 
 To run this application, ensure you have docker or another application for running containers (e.g., podman) installed on your computer. Then follow these steps: 
 ## Build a local container image of the application
