@@ -121,7 +121,7 @@ audio {
 /* #region 1.5 Pseudo-elements */
 
 nav a:hover {
-    background-color: #a89898;
+    background-color: #EEEDED;
     transition: background-color .6s ease-in;
 }
 
@@ -164,7 +164,7 @@ nav a:hover {
 /* #region 2.2 Pseudo-classes */
 .btn:hover,
 .dropdown-item:hover {
-    background-color: #a89898;
+    background-color: #EEEDED;
     transition: background-color .6s ease-in;
 }
 
