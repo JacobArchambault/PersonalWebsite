@@ -51,7 +51,7 @@ nav a {
     text-align: center;
     flex: 1 1 auto;
     padding: 0 .5rem;
-    color: #007bff;
+    color: #004B9E;
 }
 
 /*#endregion */
@@ -171,7 +171,7 @@ nav a:hover {
 /* #region 3 ID Selectors */
 
 #dropdownMenu1 {
-    color: #007bff;
+    color: #004B9E;
 }
 
 /* #endregion */
