@@ -155,28 +155,15 @@ nav a:hover {
     margin-top: 1rem;
 }
 
-.dropdown-menu {
-    background-color: #f5f5f5;
-}
-
 /* #endregion */
 
 /* #region 2.2 Pseudo-classes */
-.btn:hover,
-.dropdown-item:hover {
+.btn:hover {
     background-color: #EEEDED;
     transition: background-color .6s ease-in;
 }
 
 /* #endregion */
-
-/* #endregion */
-
-/* #region 3 ID Selectors */
-
-#dropdownMenu1 {
-    color: #004B9E;
-}
 
 /* #endregion */
 
