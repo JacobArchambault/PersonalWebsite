@@ -34,6 +34,11 @@ img {
     grid-row: 1;
 }
 
+a {
+    color: #004B9E;
+}
+
+
 /*#endregion*/
 
 /* #region 1.3 Header elements */
@@ -51,7 +56,6 @@ nav a {
     text-align: center;
     flex: 1 1 auto;
     padding: 0 .5rem;
-    color: #004B9E;
 }
 
 /*#endregion */
