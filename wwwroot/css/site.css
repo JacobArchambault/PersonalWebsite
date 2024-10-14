@@ -89,6 +89,9 @@ p {
     text-indent: 1rem;
 }
 
+p a {
+    text-decoration: underline;
+}
 /* #endregion */
 
 /* #region 1.4.3 Contact */
