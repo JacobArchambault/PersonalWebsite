@@ -12,7 +12,17 @@ app.UseExceptionHandler("/Error");
 app.UseHsts();
 app.UseHttpsRedirection();
 
-app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    OnPrepareResponse = ctx =>
+    {
+        // Set Cache-Control header to cache images for 7 days (604800 seconds)
+        if (ctx.Context.Request.Path.Value.Contains("/images/"))
+        {
+            ctx.Context.Response.Headers["Cache-Control"] = "public, max-age=604800";
+        }
+    }
+});
 app.UseStatusCodePagesWithRedirects("/Error/{0}");
 app.UseRouting();
 app.MapControllerRoute(name: "OnlyAction",
