@@ -17,9 +17,11 @@ app.UseStaticFiles(new StaticFileOptions
     OnPrepareResponse = ctx =>
     {
         // Set Cache-Control header to cache images for 7 days (604800 seconds)
-        if (ctx.Context.Request.Path.Value.Contains("/images/"))
+        var context = ctx.Context;
+        var path = context.Request.Path.Value;
+        if (path.Contains("/images/") || path.EndsWith(".css"))
         {
-            ctx.Context.Response.Headers["Cache-Control"] = "public, max-age=604800";
+            context.Response.Headers["Cache-Control"] = "public, max-age=604800";
         }
     }
 });
