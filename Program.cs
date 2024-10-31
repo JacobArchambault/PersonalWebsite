@@ -4,10 +4,17 @@ using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateSlimBuilder(args);
 builder.Services.AddMvc();
+builder.Services.AddResponseCompression(options =>
+{
+    options.EnableForHttps = true;
+});
 builder.WebHost.UseKestrelHttpsConfiguration();
 builder.WebHost.UseQuic();
 
+
+
 var app = builder.Build();
+app.UseResponseCompression();
 app.UseExceptionHandler("/Error");
 app.UseHsts();
 app.UseHttpsRedirection();
