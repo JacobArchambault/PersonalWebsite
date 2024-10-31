@@ -21,7 +21,7 @@ app.UseStaticFiles(new StaticFileOptions
         var path = context.Request.Path.Value;
         if (path.Contains("/images/") || path.EndsWith(".css"))
         {
-            context.Response.Headers["Cache-Control"] = "public, max-age=604800";
+            context.Response.Headers["Cache-Control"] = "public, max-age=31536000";
         }
     }
 });
