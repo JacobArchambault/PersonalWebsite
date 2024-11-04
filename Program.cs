@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateSlimBuilder(args);
@@ -18,9 +19,12 @@ app.UseResponseCompression();
 app.UseExceptionHandler("/Error");
 app.UseHsts();
 app.UseHttpsRedirection();
-
+var provider = new FileExtensionContentTypeProvider();
+// Add new mappings
+provider.Mappings[".avif"] = "image/avif";
 app.UseStaticFiles(new StaticFileOptions
 {
+    ContentTypeProvider = provider,
     OnPrepareResponse = ctx =>
     {
         // Set Cache-Control header to cache images for 7 days (604800 seconds)
