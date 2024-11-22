@@ -75,18 +75,6 @@ h2 {
 
 /* #region 1.4.2 About */
 
-i {
-    font-size: 2rem;
-    color: black;
-    margin-left: .2rem;
-    margin-right: .2rem;
-}
-
-label {
-    margin-bottom: 0;
-    margin-top: 0.5rem;
-}
-
 p {
     text-align: justify;
     text-indent: 1rem;
@@ -95,17 +83,6 @@ p {
 p a {
     text-decoration: underline;
 }
-/* #endregion */
-
-/* #region 1.4.3 Contact */
-
-form {
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
-    min-width: calc(320px - 2rem);
-}
-
 /* #endregion */
 
 /* #region 1.4.4 Error */
@@ -154,21 +131,6 @@ nav a:hover {
     height: auto;
     border: outset;
 }
-
-.btn {
-    align-self: flex-end;
-    background-color: rgb(191, 191, 191);
-    margin-top: 1rem;
-}
-
-/* #endregion */
-
-/* #region 2.2 Pseudo-classes */
-.btn:hover {
-    background-color: #EEEDED;
-    transition: background-color .6s ease-in;
-}
-
 /* #endregion */
 
 /* #endregion */
